@@ -1,0 +1,71 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#projects {
+    background-color: #afafaf;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects h1 {
+    flex-basis: 100%;
+}
+
+.card {
+
+}
+
+#resume {
+    padding: 20px;
+}
+
+#certifications {
+    background-color: #afafaf;
+    padding: 20px;
+}
+
+#education {
+    padding: 20px;
+}
+
+#biography {
+    background-color: #afafaf;
+    padding: 20px;
+}
+
+#skills {
+    padding: 20px;
+}
+
+footer {
+    background-color: #afafaf;
+    padding: 10px;
+    text-align: center;
+}

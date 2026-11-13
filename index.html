@@ -1,18 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Stephen Littman e-Portfolio</title>
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
 
-    <h1>Hello, World!</h1>
-    <p>This is a HTML boilerplate template.</p>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar bg-black navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Top of page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certifications">Certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#biography">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.linkedin.com/in/stephen-littman" target="_blank">LinkedIn</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="https://github.com/anarchking" target="_blank">GitHub</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero-container">
+            <img src="images/ME.jpg" alt="Photo of Stephen Littman" class="img-fluid rounded-circle mb-3" width="200" height="200">
+            <p>
+                CompTIA A+ certified Software Developer combining full-stack programming (Python, Django, Flask), server administration (Proxmox, Docker), and hands-on electrical manufacturing experience. Adept at problem-solving in fast-paced environments, from writing backend queries to troubleshooting 110V systems. Currently pursuing Network+ and seeking a full-time software development or systems engineering role.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+                <div class="card" style="width: 14rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project</h5>
+                        <p class="card-text">Project description</p>
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary" style="float: right;">GitHub</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project</h5>
+                        <p class="card-text">Project description</p>
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary" style="float: right;">GitHub</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 14rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Project</h5>
+                        <p class="card-text">Project description</p>
+                        <a href="#" class="btn btn-primary">Demo</a>
+                        <a href="#" class="btn btn-secondary" style="float: right;">GitHub</a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="resume">
+            <h1>Resume</h1>
+        </section>
+
+        <section id="certifications">
+            <h1>Certifications</h1>
+        </section>
+
+        <section id="education">
+            <h1>Education</h1>
+        </section>
+
+        <section id="biography">
+            <h1>Biography</h1>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Stephen Littman. All rights reserved.</p>
+    </footer>
 
     <!-- JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
