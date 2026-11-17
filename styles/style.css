@@ -26,20 +26,66 @@ main {
     padding: 20px;
 }
 
+.hero-container img {
+    width: clamp(64px, 25vw, 200px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+
 #projects {
     background-color: #afafaf;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 }
 
-#projects h1 {
-    flex-basis: 100%;
+.project-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 8px;
 }
 
 .card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1 0 12rem;
+}
 
+.project-cards .card-img-top {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.card-actions .btn {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    #projects {
+        padding: 10px;
+    }
+
+    .project-cards {
+        gap: 12px;
+    }
 }
 
 #resume {
